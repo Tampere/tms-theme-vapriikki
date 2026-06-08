@@ -30,7 +30,7 @@
     "@babel/register": "^7.21.0",
     "@geniem/geniem-rules-stylelint": "^1.0.4",
     "@wordpress/eslint-plugin": "^9.3.0",
-    "ajv": "^6.12.6",
+    "ajv": "^6.15.0",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
