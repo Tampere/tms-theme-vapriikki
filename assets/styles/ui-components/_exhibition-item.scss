@@ -1,0 +1,71 @@
+.exhibition-item {
+
+    &__arrow-link {
+        color: $color-ui-border-light;
+    }
+
+    &__image {
+        position: relative;
+        padding-top: 68%;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__image-badge {
+        display: flex;
+        position: absolute;
+        top: $theme-spacing-half;
+        left: $theme-spacing-half;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        background-color: $primary;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: .5rem solid $color-vapriikki-red;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(-135deg);
+        }
+
+        span {
+            color: $primary-invert;
+        }
+    }
+
+    &__badge-text {
+        display: inline-block;
+        font-size: 12px !important;
+        padding: $theme-spacing-half;
+        font-weight: $weight-light;
+    }
+}
+
+.layout-exhibitions {
+    .exhibition-item__image-badge {
+        width: 4rem;
+        height: 4rem;
+        min-width: auto;
+        min-height: auto;
+        font-size: 1rem;
+
+        &::after {
+            border-width: .25rem;
+        }
+    }
+}

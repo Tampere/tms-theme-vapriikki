@@ -1,0 +1,19 @@
+.pill {
+    border-width: 1px !important;
+    background-color: $primary;
+    color: $primary-invert;
+    font-size: 1.1rem !important;
+    letter-spacing: .06rem;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-weight: $weight-normal !important;
+
+    .icon {
+        fill: currentColor !important;
+        color: inherit !important;
+    }
+
+    &.is-primary-invert {
+        color: $primary !important;
+    }
+}

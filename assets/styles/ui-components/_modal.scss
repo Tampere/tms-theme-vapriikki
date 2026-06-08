@@ -1,0 +1,106 @@
+.modal {
+    .modal-close-button {
+        &,
+        &:hover,
+        &:focus {
+            background-color: $white !important;
+            color: $black !important;
+            .icon {
+                fill: $black !important;
+            }
+        }
+
+        &:focus {
+            outline: 0.2rem dotted $white !important;
+            outline-offset: 0.25rem !important;
+        }
+
+        &:hover {
+            outline: 0;
+        }
+    }
+
+    &--slider {
+        .modal-close-button {
+            @include from($tablet) {
+                top: $theme-spacing-two;
+            }
+        }
+    }
+
+    .slick-arrow {
+        &:focus {
+            outline: 0.2rem dotted $white !important;
+            outline-offset: 0.25rem !important;
+        }
+
+    }
+}
+
+.modal-content {
+
+    a {
+        color: $white;
+        text-decoration: underline;
+
+        &:hover {
+            color: $white !important;
+        }
+
+        &:focus {
+            outline-color: $white !important;
+        }
+    }
+}
+
+.modal--slider {
+
+    .modal-content {
+
+        p a {
+            color: $white;
+            text-decoration: underline;
+
+            &:hover {
+                color: $white !important;
+            }
+
+            &:focus {
+                outline-color: $white !important;
+            }
+        }
+
+        strong {
+            font-weight: 400;
+        }
+
+        .slick-slide {
+            padding: 0.588rem;
+        }
+
+        .slick-current {
+            &:focus {
+                .image-carousel__item {
+                    outline: 0.2rem dotted #fff;
+                    outline-offset: 0.25rem;
+                }
+            }
+        }
+
+    }
+}
+
+.modaal-close {
+
+    &:focus:before,
+    &:focus:after,
+    &:hover:before,
+    &:hover:after {
+        background: $black;
+    }
+
+    &:focus {
+        outline: 0.25rem dotted $white;
+        outline-offset: 0.25rem
+    }
+}

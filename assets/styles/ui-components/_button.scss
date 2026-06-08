@@ -1,0 +1,92 @@
+// stylelint-disable declaration-no-important
+
+$button-primary-border-color: $primary;
+$button-secondary-border-color: $button-primary-border-color;
+
+
+.button {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    letter-spacing: .06rem !important;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    border-color: transparent !important;
+    // box-shadow: 1px 1px 8px 0 bulmaLighten($primary-invert, 50);
+    color: $primary-invert;
+    background-color: $color-vapriikki-red;
+
+    &:hover,
+    &.is-hovered,
+    &:focus,
+    &.is-focused,
+    &:active,
+    &.is-active {
+        box-shadow: 0 .125rem .375rem rgba(0, 0, 0, .15);
+        color: $primary-invert;
+        background-color: $color-vapriikki-red;
+    }
+
+    .icon {
+        fill: currentColor !important;
+        color: inherit;
+    }
+
+    &:focus,
+    &.is-focused {
+        border-color: $button-primary-border-color !important;
+        outline: .2rem dotted $black !important;
+        outline-offset: .25rem !important;
+    }
+
+    &.is-primary {
+        background-color: $primary !important;
+        color: $primary-invert !important;
+        border-color: $primary-invert !important;
+
+        .icon {
+            fill: $primary-invert !important;
+        }
+    }
+
+    &.is-primary.is-inverted,
+    &.is-primary-invert {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $primary !important;
+            background-color: $primary-invert !important;
+            color: $primary !important;
+
+            .icon {
+                fill: currentColor !important;
+                color: inherit;
+            }
+        }
+    }
+
+    &.is-secondary {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $primary-invert !important;
+            color: $primary !important;
+
+            .icon {
+                fill: currentColor !important;
+            }
+        }
+    }
+
+    &.is-outlined {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $primary-invert !important;
+            background-color: transparent !important;
+            color: $primary-invert !important;
+        }
+    }
+}
